@@ -1,3 +1,18 @@
+# Build on openshift
+
+oc new-build  https://github.com/nodeshift-starters/devfile-sample.git  --name=nodejs-example
+
+# Deploy App without configmap and secret
+
+
+
+# Deploy App with configmap and secret
+
+
+# Show deployment historic
+
+
+
 # Creating an application with a Node.js code sample
 
 **Note:** The Node.js code sample uses the **8081** HTTP port.
