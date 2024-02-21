@@ -1,13 +1,19 @@
-# Build on openshift
+# Build on openshift from git
 
 oc new-build  https://github.com/nodeshift-starters/devfile-sample.git  --name=nodejs-example
 
+
+# Build on openshift from local
+
+oc start-build  --from-dir=. nodejs-example
+
 # Deploy App without configmap and secret
 
-
+oc apply -f deploy.yaml
 
 # Deploy App with configmap and secret
 
+oc apply -f deploy-with-cm-secret.yaml
 
 # Show deployment historic
 
