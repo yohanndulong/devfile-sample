@@ -25,6 +25,9 @@ spec:
             requests:
               memory: "50Mi"
               cpu: "10m"
+            limits:
+              memory: "100Mi"
+              cpu: "500m"
     triggers:
     - type: ConfigChange 
     strategy:
